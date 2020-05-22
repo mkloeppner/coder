@@ -9,3 +9,10 @@ We should engage and inspire each other rather than limiting the approaches just
 
 Humble and experienced developers value diversity and different thoughts, even if it's towards Apple or Microsoft ;).
 
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="/{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
