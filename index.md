@@ -12,7 +12,7 @@ Humble and experienced developers value diversity and different thoughts, even i
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="/coder/{{ post.url }}">{{ post.title }}</a>
+      <a href="./coder/{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
