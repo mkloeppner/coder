@@ -18,6 +18,13 @@ What sounds like a rather trivial problem is in fact pretty difficult when devel
 In fact, there seem to be so many concerns, that there are tons of ways how this is being handled. 
 However, we need to look very deep into the UI frameworks to understand how they are functioning.
 
+Looking at today's approaches from various communities such as the web community with Angular or React or the whole Cross-platform community with tools such as Flutter & NativeScript its definitely 
+the right time to re-explore computer science history.
+
+There is definitely space for improvement learning and exchanging concepts from the good old days of computer history and leverage synergies by adapting new patterns or applying proven patterns to the new
+web technologies. 
+So let's start with a short history of UI interfaces. 
+
 ### Short history of UI interfaces
 
 Apple is being known for a company always creating the best user experiences when it comes to user interaction and personal devices. 
@@ -33,7 +40,26 @@ when Apple had its commercial crisis without Steve Jobs, he returned and integra
 Since then the concepts of UI development sustain for macOS, OSX, iOS, watchOS, and iPadOS (i like marketing these days). 
 Various other computer manufacturers and software developers have been inspired since then by what Apple created and integrate these concepts. 
 
-It's impressive that the concepts created back in the time still hold valid until today despite all the disruptions that user interfaces had such as touch devices, mobile phones, and screens of various sizes including watch or TV. 
+It's impressive that the concepts created back in the time still hold valid until today despite all the disruptions that user interfaces had such as touch devices, mobile phones, and screens of various sizes including watch or TV and even VR/AR. 
 The concepts barely changed, the implementations did though.
 
+So what does all of this have to do with updating UI and displaying data changes to users?
+
+We'll have to understand that UI is being composed of various components and how this is being done so let's start to take a look at how Apple implemented it.
+
 ### OSX, Quartz, CoreGraphics, UIKit/AppKit
+
+Both iOS and macOS contains a stack of graphical frameworks. Those frameworks are the actual implementation of the user interface concepts from back in the time.
+So lets take a look on their purpose and how they are functioning:
+
+| Framework | Purpose |
+| -----------| ------------ |
+| Quartz | Quartz is an image processing framework. It provides functionality to draw images and optimize quality by applying filters such as Anti-aliasing or half-pixel rendering. Quartz actually consists of the Quartz Compositor which actually acts as a window server and Quartz2D which provides image operations in order to draw images to any output device such as a graphics card. Also Quartz uses an internal component called Quartz Extreme to utilize hardware acceleration for tasks that run best on accelerated graphics hardware. |
+| CoreGraphics | CoreGraphics is the 2D library of Apples Ecosystem. It is capable of drawing shapes such as circles, rectangles and utilized Quartz to optimize the image quality and process these optimizations in the most effective way. |
+| UIKit/AppKit | UIKit and AppKit contain a set of already created components utilizing the drawing capabilities of CoreGraphics. In addition UIKit and AppKit contain the interaction handling with these components for eg. Touch Handling for UIKit or MousePointer handling for AppKit. |
+
+All those frameworks have their purpose and are optimized for certain tasks. We'll not go into details, that might be different posts. 
+
+What needs to understand is how they interact and how they work together with hardware in order to achieve the goal of displaying a user interface. We'll use a high level explanation that will not be accurate but serve our needs to understand hardware and software implications.
+
+
