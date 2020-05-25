@@ -49,5 +49,14 @@ We'll have to understand that UI is being composed of various components and how
 
 ### OSX, Quartz, CoreGraphics, UIKit/AppKit
 
-Both iOS and macOS contains a stack of graphical 
+Both iOS and macOS contains a stack of graphical frameworks. Those frameworks are the actual implementation of the user interface concepts from back in the time.
+So lets take a look on their purpose and how they are functioning:
+
+| Framework | Purpose |
+-----------------------
+| Quartz | Quartz is an image processing framework. It provides functionality to draw images and optimize quality by applying filters such as Anti-aliasing or half-pixel rendering. Quartz actually consists of the Quartz Compositor which actually acts as a window server and Quartz2D which provides image operations in order to draw images to any output device such as a graphics card. Also Quartz uses an internal component called Quartz Extreme to utilize hardware acceleration for tasks that run best on accelerated graphics hardware. |
+| CoreGraphics | CoreGraphics is the 2D library of Apples Ecosystem. It is capable of drawing shapes such as circles, rectangles and utilized Quartz to optimize the image quality and process these optimizations in the most effective way. |
+| UIKit/AppKit | UIKit and AppKit contain a set of already created components utilizing the drawing capabilities of CoreGraphics. In addition UIKit and AppKit contain the interaction handling with these components for eg. Touch Handling for UIKit or MousePointer handling for AppKit |
+
+
 
