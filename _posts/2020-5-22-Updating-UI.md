@@ -20,4 +20,14 @@ However, we need to look very deep into the UI frameworks to understand how they
 
 ### iOS/OSX - Quartz, CoreGraphics, UIKit/AppKit
 
-OSX in fact was one 
+Apple is being known for a company always creating the best user experiences when it comes to user interaction and personal devices. 
+Steve Jobs has been the creator of the whole personal computer history in a time when computer were heavy machines only optimized to commercial 
+use within companies.
+
+Even though Apple did not invent the concept of a User Interface for computers (actually it was invented by Xerox PARC, a research institute), Apple made it popular with "Apple Lisa" from 1983.
+Still, today's concept of UI development does not come from this early stage. 
+
+Steve Jobs seemed to reach his full potential after he left Apple and founded a company called NeXT. The computers that NeXT produced were too expensive to be a commercial success, but 
+when Apple had its commercial crisis without Steve Jobs, he returned and integrated NeXT software and tools for UI development into macOS.
+
+Since then the concepts of UI development sustain for macOS, OSX, iOS, watchOS, and iPadOS (i like marketing these days). 
