@@ -62,6 +62,6 @@ All those frameworks have their purpose and are optimized for certain tasks. We'
 
 What needs to understand is how they interact and how they work together with hardware in order to achieve the goal of displaying a user interface. We'll use a high level explanation that will not be accurate but serve our needs to understand hardware and software implications.
 
-![Graphics Pipe](./graphics_pipe.png "Graphics Pipe")
+![Graphics Pipe](https://mkloeppner.github.io/coder/graphics_pipe.png "Graphics Pipe")
 
 
